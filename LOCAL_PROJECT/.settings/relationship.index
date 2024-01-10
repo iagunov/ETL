@@ -1,0 +1,64 @@
+[ {
+  "baseItem" : {
+    "id" : "_Snd3UK5kEe6o7sV8bg0IoQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_4fjBUK5lEe6o7sV8bg0IoQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_7g9ucK5mEe6o7sV8bg0IoQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_L3Y_wK5mEe6o7sV8bg0IoQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_SMmq0K5lEe6o7sV8bg0IoQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_UiA4cK5kEe6o7sV8bg0IoQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_eK0T0K5mEe6o7sV8bg0IoQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_eQ4xgK5kEe6o7sV8bg0IoQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_icRXYK5lEe6o7sV8bg0IoQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_4fjBUK5lEe6o7sV8bg0IoQ - ss_md_account_d",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_7g9ucK5mEe6o7sV8bg0IoQ - ss_md_ledger_account_s",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_L3Y_wK5mEe6o7sV8bg0IoQ - ss_md_currency_d",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_SMmq0K5lEe6o7sV8bg0IoQ - ss_ft_balance_f",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_eK0T0K5mEe6o7sV8bg0IoQ - ss_md_exchange_rate_d",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_icRXYK5lEe6o7sV8bg0IoQ - ss_ft_posting_f",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]

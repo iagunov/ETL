@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_dO5wEK5kEe6o7sV8bg0IoQ" name="ORACLE_DS" id="_UiA4cK5kEe6o7sV8bg0IoQ" label="ORACLE_DS" dataPackage="_dP1kMK5kEe6o7sV8bg0IoQ" DatabaseType="Oracle with service name" DriverClass="oracle.jdbc.OracleDriver" URL="jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=localhost)(port=1521))(connect_data=(service_name=orcl)))" dbVersionString="ORACLE_18" Port="1521" Username="DS" Password="enc:system.encryption.key.v1:OeVIig8DMS4FdizUvmhnE1gBp55W41QRWlFxvLQ6x3Qb9g==" ServerName="localhost" DatasourceName="" FileFieldName="" SID="orcl" SqlSynthax="" StringQuote="" NullChar="" DbmsId="oracle_id" ProductId="ORACLE" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="DS">
+    <taggedValue xmi:id="_dO6-MK5kEe6o7sV8bg0IoQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_dPMrAK5kEe6o7sV8bg0IoQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_dPPuUK5kEe6o7sV8bg0IoQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_dPPuUa5kEe6o7sV8bg0IoQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_dPPuUq5kEe6o7sV8bg0IoQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_dPPuU65kEe6o7sV8bg0IoQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_dPPuVK5kEe6o7sV8bg0IoQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_dPPuVa5kEe6o7sV8bg0IoQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_dPfl8K5kEe6o7sV8bg0IoQ" tag="DB ProductName" value="Oracle"/>
+    <taggedValue xmi:id="_dPfl8a5kEe6o7sV8bg0IoQ" tag="DB ProductVersion" value="Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production&#xA;Version 19.3.0.0.0"/>
+    <taggedValue xmi:id="_dPfl8q5kEe6o7sV8bg0IoQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_dO6-Ma5kEe6o7sV8bg0IoQ" key="CONN_PARA_KEY_USERNAME" value="DS"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_dP1kMK5kEe6o7sV8bg0IoQ" name="DS" dataManager="_dO5wEK5kEe6o7sV8bg0IoQ"/>
+</xmi:XMI>
