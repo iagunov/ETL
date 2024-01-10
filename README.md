@@ -7,7 +7,7 @@ This project facilitates the Extract, Transform, and Load (ETL) process for migr
 * Logging and Monitoring: Migration progress is tracked using logs and monitoring capabilities.
 
 # Live video of the process
-[![Watch the Demo Video](https://drive.google.com/uc?export=download&id=1BWv3GczyquOIMM7zF3J0cRAuOUn3vzim/preview)](https://drive.google.com/file/d/1BWv3GczyquOIMM7zF3J0cRAuOUn3vzim/preview)
+[![Watch the Video](https://drive.google.com/uc?export=download&id=1BWv3GczyquOIMM7zF3J0cRAuOUn3vzim)](https://drive.google.com/file/d/1BWv3GczyquOIMM7zF3J0cRAuOUn3vzim/preview)
 
 
 
