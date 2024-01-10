@@ -1,15 +1,15 @@
--- Скрипт для избежания ошибок
+-- РЎРєСЂРёРїС‚ РґР»СЏ РёР·Р±РµР¶Р°РЅРёСЏ РѕС€РёР±РѕРє
 ALTER SESSION SET "_ORACLE_SCRIPT" = true;
 
--- Создание пользователя  DS с грантами
+-- РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ  DS СЃ РіСЂР°РЅС‚Р°РјРё
 CREATE USER DS IDENTIFIED BY 123456;
 GRANT CREATE SESSION TO DS;
 ALTER USER DS quota unlimited on USERS;
 
--- Создание пользователя  LOGS с грантами
+-- РЎРѕР·РґР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ  LOGS СЃ РіСЂР°РЅС‚Р°РјРё
 CREATE USER LOGS IDENTIFIED BY 123456;
 GRANT CREATE SESSION TO LOGS;
 ALTER USER LOGS quota unlimited on USERS;
 
---Проверка что пользователи создались
+--РџСЂРѕРІРµСЂРєР° С‡С‚Рѕ РїРѕР»СЊР·РѕРІР°С‚РµР»Рё СЃРѕР·РґР°Р»РёСЃСЊ
 SELECT username FROM dba_users WHERE username = 'DS' OR username = 'LOGS';

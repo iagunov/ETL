@@ -1,4 +1,4 @@
--- создание таблицы FT_BALANCE_F
+-- СЃРѕР·РґР°РЅРёРµ С‚Р°Р±Р»РёС†С‹ FT_BALANCE_F
 CREATE TABLE DS.FT_BALANCE_F (
     on_date DATE not null,
     account_rk NUMBER not null,
@@ -6,14 +6,14 @@ CREATE TABLE DS.FT_BALANCE_F (
     balance_out FLOAT
 )
 TABLESPACE USERS;
--- Добавление первичных составных ключей
+-- Р”РѕР±Р°РІР»РµРЅРёРµ РїРµСЂРІРёС‡РЅС‹С… СЃРѕСЃС‚Р°РІРЅС‹С… РєР»СЋС‡РµР№
 ALTER TABLE DS.FT_BALANCE_F
 ADD primary key (on_date, account_rk);
 -- SELECT * FROM DS.FT_BALANCE_F ORDER BY account_rk;
 -- TRUNCATE TABLE DS.FT_BALANCE_F;
 ------------------------------------------------------
 
--- Создание таблицы FT_POSTING_F
+-- РЎРѕР·РґР°РЅРёРµ С‚Р°Р±Р»РёС†С‹ FT_POSTING_F
 CREATE TABLE DS.FT_POSTING_F (
     oper_date DATE not null,
     credit_account_rk NUMBER not null,
@@ -22,14 +22,14 @@ CREATE TABLE DS.FT_POSTING_F (
     debet_amount FLOAT
 )
 TABLESPACE USERS;
--- Добавление первичных составных ключей
+-- Р”РѕР±Р°РІР»РµРЅРёРµ РїРµСЂРІРёС‡РЅС‹С… СЃРѕСЃС‚Р°РІРЅС‹С… РєР»СЋС‡РµР№
 ALTER TABLE DS.FT_POSTING_F
 ADD primary key (oper_date, credit_account_rk, debet_account_rk);
 -- SELECT * FROM DS.FT_POSTING_F;
 -- TRUNCATE TABLE DS.FT_POSTING_F;
 ------------------------------------------------------
 
--- Создание таблицы MD_ACCOUNT_D
+-- РЎРѕР·РґР°РЅРёРµ С‚Р°Р±Р»РёС†С‹ MD_ACCOUNT_D
 CREATE TABLE DS.MD_ACCOUNT_D (
     data_actual_date DATE not null,
     data_actual_end_date DATE not null,
@@ -40,14 +40,14 @@ CREATE TABLE DS.MD_ACCOUNT_D (
     currency_code VARCHAR2(3 char) not null
 )
 TABLESPACE USERS;
--- Добавление первичных составных ключей
+-- Р”РѕР±Р°РІР»РµРЅРёРµ РїРµСЂРІРёС‡РЅС‹С… СЃРѕСЃС‚Р°РІРЅС‹С… РєР»СЋС‡РµР№
 ALTER TABLE DS.MD_ACCOUNT_D
 ADD primary key (data_actual_date, account_rk);
 -- SELECT * FROM DS.MD_ACCOUNT_D;
 -- TRUNCATE TABLE DS.MD_ACCOUNT_D;
 ------------------------------------------------------
 
--- Создание таблицы MD_CURRENCY_D
+-- РЎРѕР·РґР°РЅРёРµ С‚Р°Р±Р»РёС†С‹ MD_CURRENCY_D
 CREATE TABLE DS.MD_CURRENCY_D (
     currency_rk NUMBER not null,
     data_actual_date DATE not null,
@@ -56,14 +56,14 @@ CREATE TABLE DS.MD_CURRENCY_D (
     code_iso_char VARCHAR2(3 char)
 )
 TABLESPACE USERS;
--- Добавление первичных составных ключей
+-- Р”РѕР±Р°РІР»РµРЅРёРµ РїРµСЂРІРёС‡РЅС‹С… СЃРѕСЃС‚Р°РІРЅС‹С… РєР»СЋС‡РµР№
 ALTER TABLE DS.MD_CURRENCY_D
 ADD primary key (currency_rk, data_actual_date);
 -- SELECT * FROM DS.MD_CURRENCY_D;
 -- TRUNCATE TABLE DS.MD_CURRENCY_D;
 ------------------------------------------------------
 
--- Создание таблицы MD_EXCHANGE_RATE_D
+-- РЎРѕР·РґР°РЅРёРµ С‚Р°Р±Р»РёС†С‹ MD_EXCHANGE_RATE_D
 CREATE TABLE DS.MD_EXCHANGE_RATE_D (
     data_actual_date DATE not null,
     data_actual_end_date DATE,
@@ -72,14 +72,14 @@ CREATE TABLE DS.MD_EXCHANGE_RATE_D (
     code_iso_num VARCHAR2(3 char)
 )
 TABLESPACE USERS;
--- Добавление первичных составных ключей
+-- Р”РѕР±Р°РІР»РµРЅРёРµ РїРµСЂРІРёС‡РЅС‹С… СЃРѕСЃС‚Р°РІРЅС‹С… РєР»СЋС‡РµР№
 ALTER TABLE DS.MD_EXCHANGE_RATE_D
 ADD primary key (data_actual_date, currency_rk);
 -- SELECT * FROM DS.MD_EXCHANGE_RATE_D;
 -- TRUNCATE TABLE DS.MD_EXCHANGE_RATE_D;
 ------------------------------------------------------
 
--- Создание таблицы DS.MD_LEDGER_ACCOUNT_S
+-- РЎРѕР·РґР°РЅРёРµ С‚Р°Р±Р»РёС†С‹ DS.MD_LEDGER_ACCOUNT_S
 CREATE TABLE DS.MD_LEDGER_ACCOUNT_S (
     chapter CHAR(1 char),
     chapter_name VARCHAR2(16 char),
@@ -111,7 +111,7 @@ CREATE TABLE DS.MD_LEDGER_ACCOUNT_S (
     is_correct VARCHAR2(1 char)
 )
 TABLESPACE USERS;
--- Добавление первичных составных ключей
+-- Р”РѕР±Р°РІР»РµРЅРёРµ РїРµСЂРІРёС‡РЅС‹С… СЃРѕСЃС‚Р°РІРЅС‹С… РєР»СЋС‡РµР№
 ALTER TABLE DS.MD_LEDGER_ACCOUNT_S
 ADD primary key (ledger_account, start_date);
 -- SELECT * FROM DS.MD_LEDGER_ACCOUNT_S;
