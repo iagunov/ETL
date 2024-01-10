@@ -8,7 +8,7 @@ This project facilitates the Extract, Transform, and Load (ETL) process for migr
 
 # Live video of the process
 
-[![Watch the Demo Video](https://drive.google.com/file/d/1pu4jGdriJOfkyWyfRXf3xziEFFcr9UQe/view?usp=sharing)](https://drive.google.com/file/d/1BWv3GczyquOIMM7zF3J0cRAuOUn3vzim/view)
+https://drive.google.com/file/d/1BWv3GczyquOIMM7zF3J0cRAuOUn3vzim/view
 
 
 
